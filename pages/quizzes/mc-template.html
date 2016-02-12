@@ -1,0 +1,36 @@
+<div class="card purple">
+
+    <div class="card-content">
+		<div class="quiz-area" ng-show="inProgress">
+			<div ng-show="!quizOver">
+		        <p id="score" ng-show="inProgress">&#9733; Score: {{score}}<p>
+				<h2 id="question">{{question}}</h2>
+				<ul id="options">
+					<li ng-repeat="option in options">
+						<input type="radio" name="answer" value="{{option}}" id="{{option}}" />
+					    <label for="{{ option }}">{{ option }}</label>
+					</li>
+				</ul>
+				
+				<div ng-show="!answerMode">
+					<button ng-click="nextQuestion()" class="next-question btn">Next</button>
+					<span ng-show="correctAns">That is correct!</span>
+					<span ng-show="!correctAns">Sorry, that is an incorrect answer.</span>
+				</div>
+			</div>
+
+			<div class="over" ng-show="quizOver">
+				<h2>Quiz is over</h2>
+				<p class="score">&#9733; {{score}} / {{ items }}</p>
+				<a href="index.html" class="btn-large back">Quizzes</a>
+				<a href="../number_and_number_sense/index.html" class="btn-large back">Lessons</a>
+			</div>
+		</div>
+
+		<div class="intro" ng-show="!inProgress">
+			<p class="title">Quiz - {{ lesson }}</p>
+			<button id="startQuiz" ng-click="start()" class="btn-large waves-effect center-align">Start the Quiz</button>
+		</div>
+        <button ng-click="checkAnswer()" ng-show="answerMode" class="btn">Submit</button>
+    </div>  
+</div>

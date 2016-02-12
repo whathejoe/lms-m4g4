@@ -1,0 +1,643 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ----------------- FONTS / ICONS-----------------*/
+
+@font-face {
+    font-family: 'Schoolbell';
+    src: url(../font/Schoolbell.ttf);
+};
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+        url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+        url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    /*font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* ----------------- LOGIN -----------------*/
+
+#appLogo {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input#name {
+    font-size: 20px;
+}
+
+/* ----------------- MAIN PAGE -----------------*/
+
+#greeting {
+    padding-top: 50px;
+    font-size: 45px;
+    color: #424242;
+}
+
+#user {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.input-field label {
+    color: #795548;
+}
+
+.input-field input[type=text] {
+    border-bottom-color: #795548;
+}
+
+.input-field input[type=text]:focus + label {
+    color: #ff6d00;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #ff6d00;
+    box-shadow: 0 1px 0 0 #ff6d00;
+}
+
+#exit-btn {
+    margin-top: 24px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer img {
+    width: 100%;
+}
+
+/* ----------------- MAIN MENU -----------------*/
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 9px;
+}
+
+/* ----------------- TOPICS -----------------*/
+
+.topics {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background: url(../img/bg_blackboard.jpg) left top;
+    background-size: 100% 100%;
+}
+
+#topics-title {
+    margin-bottom: -30px;
+}
+
+/* ----------------- LESSONS -----------------*/
+
+.lessons {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url(../img/bg_paper_repeat.jpg) left top;
+    font-family: 'Schoolbell';
+}
+
+.lessons h1 {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.lessons li {
+    font-size: 1.2em;
+    margin-bottom: 14px;
+}
+
+.lessons li{
+    transition: all ease 0.2s;
+}
+
+.lessons li:hover {
+    transform: translate(12px);
+}
+
+.delayAnim {
+    -webkit-animation-duration: 0.75s;
+    -moz-animation-duration: 0.75s;
+    -o-animation-duration: 0.75s;
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    -o-animation-delay: 0.1s;
+}
+
+.delayAnim2 {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    -webkit-animation-delay: 0.15s;
+    -moz-animation-delay: 0.15s;
+    -o-animation-delay: 0.15s;
+}
+
+/* ----------------- LESSON - EA -----------------*/
+
+.lesson {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url(../img/bg_paper_repeat.jpg) left top;
+}
+
+.lesson .card-content {
+    font-family: 'Schoolbell';
+}
+
+.lesson .card-content > .card-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.lesson .card-content > .card-section {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.lesson .card-content > p {
+    font-size: 1.2em;
+}
+
+.lesson .card-content > p:first-of-type {
+    margin-top: 20px;
+}
+
+.lesson img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.lesson .card-content > p,
+.lesson img {
+    margin-bottom: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.card-section .owl {
+    display: inline;
+    margin: 0;
+}
+
+.lesson .card-section + p {
+    margin-top: 20px;
+}
+
+.indent {
+    padding-left: 120px;
+}
+
+.small-indent {
+    padding-left: 14px;
+}
+
+.blank {
+    display: inline-block;
+    min-width: 80px;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.hideme {
+    opacity: 0;
+}
+
+.blank:hover > .hideme {
+    opacity: 1;
+}
+
+.text-blue {
+    color: #82b1ff;
+}
+
+.text-red {
+    color: #ff8a80;
+}
+
+.card .card.mini p {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.card .card.mini .steps p {
+    display: block;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.card .card.mini .steps p:last-child {
+    margin-bottom: 0;
+}
+
+.card .card.mini .steps .mini-card-header {
+    display: block;
+    text-align: center;
+}
+
+.card-content.row {
+    margin-bottom: 0;
+}
+
+.asc-desc p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.row > .s6 > p,
+.row > .s7 > p,
+.row > .s8 > p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+p.long-division-answer {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.tri .s4 p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+table.centered {
+    font-size: 1.2em;
+}
+
+table.centered th,
+table.centered td {
+    font-size: 1.2em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.compare .s3 p,
+.compare .s4 p,
+.compare .s6 p, {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+div.card.mini > p.mini-card-header.underline {
+    margin-bottom: 20px;
+}
+
+#center {
+    display: block;
+    text-align: center;
+}
+
+.lesson li {
+    margin-bottom: 16px;
+    font-size: 1.2em;
+}
+
+/* ----------------- GENERAL -----------------*/
+
+#buttonMenu img {
+    padding: 30px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+#buttonMenu img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+/* clvillarealiv */
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
