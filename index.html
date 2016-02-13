@@ -27,15 +27,18 @@
             <div class="row center-align">
                 <img src="img/splash_title.png" id="appLogo" class="center-align">    
             </div>
-            <div class="row center-align">
-                <div class="input-field col s4 push-s4">
-                    <input id="name" type="text" class="validate">
-                    <label for="name">Please enter your name</label>
-                </div>    
-            </div>
-            <div class="row center-align">
-                <a href="pages/main_menu.html" class="waves-effect waves-light btn-large purple accent-3" id="start">Start</a>
-            </div>
+
+            <form name="login" method="post" action="login.php">
+                <div class="row center-align">
+                    <div class="input-field col s4 push-s4">
+                        <input name="studname" id="name" type="text" class="validate">
+                        <label for="name">Please enter your name</label>
+                    </div>    
+                </div>
+                <div class="row center-align">
+                    <button type="submit" class="waves-effect waves-light btn-large purple accent-3" id="start">Start</button>
+                </div>
+            </form>
         </div>
 
         <footer>
