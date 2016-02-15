@@ -5,6 +5,7 @@ $password = "";
 $db_name = "grade4_db";
 $table_name = "students";
 $name = $_POST['studname'];
+$url = 'pages/main_menu.html';
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$db_name", $username, $password);
@@ -17,6 +18,7 @@ try {
     if ($result > 0) {
     	# code...
     	echo $name . ' exists';
+        header("Location: $url");
     }
     echo "Connected successfully"; 
     }
