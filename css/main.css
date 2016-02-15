@@ -466,6 +466,12 @@ div.card.mini > p.mini-card-header.underline {
     font-size: 1.2em;
 }
 
+/* ----------------- QUIZZES -----------------*/
+
+.quiz-by-chapter {
+    font-size: 40px;
+}
+
 /* ----------------- GENERAL -----------------*/
 
 #buttonMenu img {
