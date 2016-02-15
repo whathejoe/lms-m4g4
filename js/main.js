@@ -17,7 +17,8 @@ $(function() {
 		});
 	});
 
-	$('a#start').on('click', function () {
+	$('button#start').on('click', function () {
+		window.sessionStorage.user_id = $('input[name=users]:checked + label').attr('for');
 		window.sessionStorage.name = $('input#name').val();
 	});
 
