@@ -149,8 +149,25 @@ textarea {
     margin-right: auto;
 }
 
+form[name=login] div.input-field.col.s4.push-s2 {
+    margin-top: 0;
+}
+
 input#name {
+    border-bottom: 2px solid #212121;
     font-size: 20px;
+    color: #212121;
+    text-align: center;
+}
+
+form[name=login] div.btn-container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.btn-container > a,
+.btn-container > button {
+    width: 100%;
 }
 
 /* ----------------- MAIN PAGE -----------------*/

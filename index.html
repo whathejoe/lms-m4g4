@@ -28,15 +28,23 @@
                 <img src="img/splash_title.png" id="appLogo" class="center-align">    
             </div>
 
-            <form name="login" method="post" action="login.php">
-                <div class="row center-align">
-                    <div class="input-field col s4 push-s4">
-                        <input name="studname" id="name" type="text" class="validate">
-                        <label for="name">Please enter your name</label>
-                    </div>    
+            <form name="login" method="post">
+                <div class="row">
+                    <div class="input-field col s4 push-s2">
+                        <input name="studname" id="name" type="text" class="validate" disabled required value="">
+                        <label for="email" data-error="wrong" data-success="right"></label>
+                    </div>
+                    <div class="btn-container col s4 push-s2">
+                        <a href="#" class="btn-large">Select a user</a>
+                    </div>
                 </div>
-                <div class="row center-align">
-                    <button type="submit" class="waves-effect waves-light btn-large purple accent-3" id="start">Start</button>
+                <div class="row">
+                    <div class="btn-container col s4 push-s2">
+                        <a href="#" class="btn-large">New User</a>
+                    </div>
+                    <div class="btn-container col s4 push-s2">
+                        <button type="submit" class="waves-effect waves-light btn-large purple accent-3" id="start">Start</button>
+                    </div>
                 </div>
             </form>
         </div>
@@ -52,6 +60,22 @@
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="js/vendor/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
+
+        <script type="text/javascript">
+            $('form').submit(function () {
+
+                // Get the Login Name value and trim it
+                var name = $.trim($('#name').val());
+
+                // Check if empty of not
+                if (name  === '') {
+                    alert('Please select a valid username.');
+                    return false;
+                } else {
+                    load("login.php");
+                }
+            });
+        </script>
 
     </body>
 </html>
