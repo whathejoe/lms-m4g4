@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -14,10 +15,12 @@ try {
     $stmt = $conn->prepare("SELECT id, name FROM $table_name WHERE name = '$name'"); 
     $stmt->execute();
 
-    $result = $stmt->rowCount(); 
-    if ($result > 0) {
+    if ($stmt->rowCount() > 0) {
     	# code...
     	echo $name . ' exists';
+        $result = $stmt->fetch();
+        $_SESSION['id'] = $result[0][0];
+        $_SESSION['name'] = $name;
         header("Location: $url");
     }
     echo "Connected successfully"; 

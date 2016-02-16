@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -52,7 +56,7 @@
 
             <div class="row">
                 <div class="col s4 btn-container">
-                    <a href="#" class="btn-large hoverable waves-effect modal-trigger">Records</a>
+                    <a href="#records_modal" class="btn-large hoverable waves-effect modal-trigger">Records</a>
                 </div>
                 <div class="col s4 btn-container">
                     <a href="#" class="btn-large hoverable waves-effect modal-trigger">Games</a>
@@ -115,6 +119,51 @@
                 </div>
                 <div class="modal-footer">
                 <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+                </div>
+            </div>
+
+            <div id="records_modal" class="modal">
+                <div class="modal-content">
+                    <?php
+                    echo '<h4>Scores for ' . $_SESSION['name'] . '</h4>'; 
+                    echo '<div class="divider"></div>';
+                    
+                    echo "<table class='striped' id='scores'>";
+                    echo "<thead><tr><th>Chapter</th><th class='center-align'>Score</th></tr></thead>";
+
+                    $servername = "localhost";
+                    $username = "root";
+                    $password = "";
+                    $db_name = "grade4_db";
+                    $table_name = "students";
+                    $id = $_SESSION['id'];
+
+                    try {
+                        $conn = new PDO("mysql:host=$servername;dbname=$db_name", $username, $password);
+                        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                        $stmt = $conn->prepare("SELECT * FROM $table_name WHERE id='$id'"); 
+                        $stmt->execute();
+                        
+                        $result = $stmt->fetch(); 
+                        echo '<tbody>';
+                        echo '<tr><td>Chapter 1: Whole Numbers</td><td class="center-align">' . $result[2] . '</td></tr>';
+                        echo '<tr><td>Chapter 2: Multiplication & Division</td><td class="center-align">' . $result[3] . '</td></tr>';
+                        echo '<tr><td>Chapter 3: Number Theory and Fraction</td><td class="center-align">' . $result[4] . '</td></tr>';
+                        echo '<tr><td>Chapter 4: Geometry</td><td class="center-align">' . $result[5] . '</td></tr>';
+                        echo '<tr><td>Chapter 5: Pattern and Algebra</td><td class="center-align">' . $result[6] . '</td></tr>';
+                        echo '<tr><td>Chapter 6: Measurement</td><td class="center-align">' . $result[7] . '</td></tr>';
+                        echo '</tbody>';
+
+                    }
+                    catch(PDOException $e) {
+                        echo "Error: " . $e->getMessage();
+                    }
+                    $conn = null;
+                    echo "</table>";
+                    ?>
+                </div>
+                <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
                 </div>
             </div>
         </div>
