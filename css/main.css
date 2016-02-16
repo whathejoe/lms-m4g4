@@ -224,6 +224,12 @@ dd {
     margin-bottom: 9px;
 }
 
+table#scores th,
+table#scores td {
+    padding: 15px;
+    font-size: 15px;
+}
+
 /* ----------------- TOPICS -----------------*/
 
 .topics {
