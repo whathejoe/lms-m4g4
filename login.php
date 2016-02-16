@@ -5,7 +5,7 @@ $password = "";
 $db_name = "grade4_db";
 $table_name = "students";
 $name = $_POST['studname'];
-$url = 'pages/main_menu.html';
+$url = 'pages/main_menu.php';
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$db_name", $username, $password);
