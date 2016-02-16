@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Schoolbell';
-    src: url(../../font/Schoolbell.ttf);
+    src: url(../font/Schoolbell.ttf);
 }
 
 /* ----------------- GENERAL -----------------*/
@@ -48,6 +48,7 @@ p.title {
 	font-size: 24px;
 	text-align: center;
 	color: #FFEB3B;
+	text-shadow: 0px 0px 3px black;
 }
 
 #score,
