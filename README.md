@@ -14,8 +14,8 @@ Interactive learning system for grade 4 students. Includes lessons with practice
 2. On your browser go to *http://localhost/phpmyadmin/*
 3. Click on SQL, enter `CREATE DATABASE grade4_db;` and click Go
 4. Click on grade4_db on the database list (left-hand side)
-5. Again click on SQL and enter the following code:
-    ```sql 
+5. Again click on SQL and enter the following code:  
+    ``` 
     CREATE TABLE students (
 	    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	    name VARCHAR(30) NOT NULL,
@@ -30,7 +30,7 @@ Interactive learning system for grade 4 students. Includes lessons with practice
     
 #### Creating student profiles
 1. Go to *http://localhost/phpmyadmin/*
-2. Click on *grade4_db* and select the *students* table
+2. Click on **grade4_db** and select the **students** table
 3. Click on the **Insert** tab
 4. Fill up the name field and click Go. No need to fill up the other fields
 
