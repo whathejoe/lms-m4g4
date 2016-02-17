@@ -7,7 +7,7 @@ app.directive('quiz', function(quizFactory) {
 		templateUrl: 'mc-template.html',
 		link: function(scope, elem, attrs) {
 			
-			scope.lesson = "Lesson 16";
+			scope.lesson = "Chapter 2";
 
 			scope.start = function() {
 				scope.id = 0;
