@@ -129,7 +129,7 @@ session_start();
                     echo '<div class="divider"></div>';
                     
                     echo "<table class='striped' id='scores'>";
-                    echo "<thead><tr><th>Chapter</th><th class='center-align'>Score</th></tr></thead>";
+                    echo "<thead><tr><th>Chapter</th><th class='center-align'>Score</th><th class='center-align'>Items</th></tr></thead>";
 
                     $servername = "localhost";
                     $username = "root";
@@ -146,12 +146,18 @@ session_start();
                         
                         $result = $stmt->fetch(); 
                         echo '<tbody>';
-                        echo '<tr><td>Chapter 1: Whole Numbers</td><td class="center-align">' . $result[2] . '</td></tr>';
-                        echo '<tr><td>Chapter 2: Multiplication & Division</td><td class="center-align">' . $result[3] . '</td></tr>';
-                        echo '<tr><td>Chapter 3: Number Theory and Fraction</td><td class="center-align">' . $result[4] . '</td></tr>';
-                        echo '<tr><td>Chapter 4: Geometry</td><td class="center-align">' . $result[5] . '</td></tr>';
-                        echo '<tr><td>Chapter 5: Pattern and Algebra</td><td class="center-align">' . $result[6] . '</td></tr>';
-                        echo '<tr><td>Chapter 6: Measurement</td><td class="center-align">' . $result[7] . '</td></tr>';
+                        echo '<tr><td>Chapter 1: Whole Numbers</td><td class="center-align">' . $result[2] . '</td>';
+                        echo '<td class="center-align">27</td></tr>';
+                        echo '<tr><td>Chapter 2: Multiplication & Division</td><td class="center-align">' . $result[3] . '</td>';
+                        echo '<td class="center-align">47</td></tr>';
+                        echo '<tr><td>Chapter 3: Number Theory and Fraction</td><td class="center-align">' . $result[4] . '</td>';
+                        echo '<td class="center-align">24</td></tr>';
+                        echo '<tr><td>Chapter 4: Geometry</td><td class="center-align">' . $result[5] . '</td>';
+                        echo '<td class="center-align">28</td></tr>';
+                        echo '<tr><td>Chapter 5: Pattern and Algebra</td><td class="center-align">' . $result[6] . '</td>';
+                        echo '<td class="center-align">15</td></tr>';
+                        echo '<tr><td>Chapter 6: Measurement</td><td class="center-align">' . $result[7] . '</td>';
+                        echo '<td class="center-align">9</td></tr>';
                         echo '</tbody>';
 
                     }
