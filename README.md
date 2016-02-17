@@ -15,7 +15,7 @@ Interactive learning system for grade 4 students. Includes lessons with practice
 3. Click on SQL, enter `CREATE DATABASE grade4_db;` and click Go
 4. Click on grade4_db on the database list (left-hand side)
 5. Again click on SQL and enter the following code:
-    ``` 
+    ```sql 
     CREATE TABLE students (
 	    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	    name VARCHAR(30) NOT NULL,
