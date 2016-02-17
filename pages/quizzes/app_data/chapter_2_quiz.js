@@ -33,7 +33,7 @@ app.directive('quiz', function(quizFactory) {
 				} else {
 					scope.quizOver = true;
 					// send score to db
-					$.post("sendtodb.php", {chapter: "ch6", score: scope.score});
+					$.post("sendtodb.php", {chapter: "ch2", score: scope.score});
 				}
 			};
 
