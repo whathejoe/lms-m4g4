@@ -81,10 +81,7 @@ session_start();
                             &copy; 2015-2016 Bulacan State University<br>
                             All rights reserved</p>
                         </div>
-                        
-                            <img src="../img/logo.png" class="col s5">
-                        
-                        
+                        <img src="../img/logo.png" class="col s5">
                     </div>
                     
                     <p>Developed by: </p>
