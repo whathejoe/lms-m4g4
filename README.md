@@ -16,16 +16,7 @@ Interactive learning system for grade 4 students. Includes lessons with practice
 4. Click on grade4_db on the database list (left-hand side)
 5. Again click on SQL and enter the following code:  
     ``` 
-    CREATE TABLE students (
-	    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-	    name VARCHAR(30) NOT NULL,
-	    ch1 INT(3),
-	    ch2 INT(3),
-	    ch3 INT(3),
-	    ch4 INT(3),
-	    ch5 NT(3),
-	    ch6 INT(3)
-    )
+    CREATE TABLE `grade4_db`.`students` ( `id` INT(6) NOT NULL AUTO_INCREMENT PRIMARY KEY , `name` VARCHAR(20) NOT NULL , `ch1` INT(3) NOT NULL , `ch2` INT(3) NOT NULL , `ch3` INT(3) NOT NULL , `ch4` INT(3) NOT NULL , `ch5` INT(3) NOT NULL , `ch6` INT(3) NOT NULL , UNIQUE (`name`) ) ENGINE = InnoDB;
     ```
     
 #### Creating student profiles
