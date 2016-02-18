@@ -214,17 +214,6 @@ footer img {
     width: 100%;
 }
 
-#help_modal img {
-    display: block;
-    width: 80%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#about_modal img {
-    margin-top: 15px;
-}
-
 /* ----------------- MAIN MENU -----------------*/
 
 dt {
@@ -239,6 +228,17 @@ table#scores th,
 table#scores td {
     padding: 15px;
     font-size: 15px;
+}
+
+#help_modal img {
+    display: block;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#about_modal img {
+    margin-top: 15px;
 }
 
 /* ----------------- TOPICS -----------------*/
