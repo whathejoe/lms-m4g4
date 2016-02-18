@@ -479,6 +479,17 @@ div.card.mini > p.mini-card-header.underline {
     display: block;
 }
 
+.practice-table {
+    margin-bottom: 20px;
+}
+
+.practice-table th,
+.practice-table td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
 /* ----------------- QUIZZES -----------------*/
 
 .quiz-by-chapter {
