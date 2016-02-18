@@ -251,6 +251,7 @@ table#scores td {
 .lessons {
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     background: url(../img/bg_paper_repeat.jpg) left top;
@@ -298,6 +299,7 @@ table#scores td {
 .lesson {
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     background: url(../img/bg_paper_repeat.jpg) left top;
