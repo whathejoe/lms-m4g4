@@ -75,29 +75,27 @@ session_start();
                 <div class="modal-content">
                     <h4>About</h4>
                     <div class="divider"></div>
-                    <p>Learning Math for Grade 4<br>
-                    &copy; 2015-2016 Bulacan State University<br>
-                    All rights reserved</p>
+                    <div class="row">
+                        <div class="col s7">
+                            <p>Learning Math for Grade 4<br>
+                            &copy; 2015-2016 Bulacan State University<br>
+                            All rights reserved</p>
+                        </div>
+                        
+                            <img src="../img/logo.png" class="col s5">
+                        
+                        
+                    </div>
                     
-
-                    <p>Published by : </p>
-                    
-                    <p>Developed by : </p>
+                    <p>Developed by: </p>
+                    <p>Charibel Camana Esguerra</p>
+                    <p>Hazel Joy San Miguel Bernardo</p>
+                    <p>Jerolene Tolentino Campillanes</p>
+                    <p>Marimar Andrion Cruz</p>
                     
                     <p>This system is protected by copyright and is proprietary to Bulacan State University. Any copying, modification, distribution or public display of this system without written consent of Bulacan State University is strictly prohibited.</p>
                     <br>
 
-                    <p>Credits </p>
-
-                    <p>Producer : </p>
-
-                    <p>Lead programmer : </p>
-
-                    <p>Programmer : </p>
-
-                    <p>Lead graphic designer : </p>
-
-                    <p>Special thanks to : </p>
                 </div>
                 <div class="modal-footer">
                 <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
