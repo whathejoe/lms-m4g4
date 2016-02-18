@@ -110,9 +110,18 @@ session_start();
                     <div class="divider"></div>
                     <dl>
                         <dt>LESSONS</dt>
-                        <dd>Pick a topic, then a lesson. Practice what you've learned with our interactive lessons!</dd>
+
+                        <dd>Pick a topic
+                            <img src="../img/help_1.png"> 
+                            Then pick a lesson.
+                            <img src="../img/help_2.png">
+                            Practice what you've learned with our interactive lessons!
+                        </dd>
                         <dt>QUIZZES</dt>
-                        <dd>Once you've practiced enough, you may take quizzes. Overcome the challenge of our interactive interactive quizzes!</dd>
+                        <dd>Once you've practiced enough, you may take quizzes. 
+                            <img src="../img/help_3.png">
+                            Overcome the challenge of our interactive quizzes!
+                        </dd>
                         <dt>ABOUT</dt>
                         <dd>If you want to know information regarding the development of this system, its owner and use, this is where you can find that</dd>
                     </dl>
