@@ -27,8 +27,8 @@ Interactive learning system for grade 4 students. Includes lessons with practice
 
 #### Uploading your site to the server
 1. Download a copy of the repo and unzip its contents inside *C:\wamp\www*
-2. There should now be a folder named lms-m4g4
-3. On you browser go to *http://localhost/lms-m4g4/*
+2. There should now be a folder named lms-m4g4-master
+3. On you browser go to *http://localhost/lms-m4g4-master/*
 
 ### Tech used
 1. Languages
