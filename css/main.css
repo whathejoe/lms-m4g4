@@ -424,6 +424,7 @@ table#scores td {
     text-align: center;
 }
 
+.row > .s5 > p,
 .row > .s6 > p,
 .row > .s7 > p,
 .row > .s8 > p {
@@ -489,6 +490,8 @@ div.card.mini > p.mini-card-header.underline {
     padding-bottom: 15px;
     text-align: center;
 }
+
+div.col.s5.push-s2 p
 
 /* ----------------- QUIZZES -----------------*/
 
