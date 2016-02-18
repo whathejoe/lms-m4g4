@@ -59,7 +59,7 @@ session_start();
                     <a href="#records_modal" class="btn-large hoverable waves-effect modal-trigger">Records</a>
                 </div>
                 <div class="col s4 btn-container">
-                    <a href="#" class="btn-large hoverable waves-effect modal-trigger">Games</a>
+                    <a href="http://www.hoodamath.com/mobile/games/flappyfactors.html" class="btn-large hoverable waves-effect modal-trigger">Games</a>
                 </div>
                 <div class="col s4 btn-container">
                     <a href="#" class="btn-large hoverable waves-effect modal-trigger">Settings</a>
