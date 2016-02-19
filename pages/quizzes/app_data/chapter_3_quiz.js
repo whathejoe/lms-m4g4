@@ -14,6 +14,7 @@ app.directive('quiz', function(quizFactory) {
 				scope.items = 0;
 				scope.quizOver = false;
 				scope.inProgress = true;
+				scope.chime = document.getElementById('correct');
 				scope.getQuestion();
 			};
 
@@ -43,6 +44,7 @@ app.directive('quiz', function(quizFactory) {
 				var ans = $('input[name=answer]:checked').val();
 
 				if(ans == scope.options[scope.answer]) {
+					scope.chime.play();
 					scope.score++;
 					scope.correctAns = true;
 				} else {
