@@ -502,6 +502,20 @@ div.card.mini > p.mini-card-header.underline {
     text-align: center;
 }
 
+.fraction, .top, .bottom {
+    padding: 0 5px;
+    font-size: 11px;
+}
+
+.fraction {
+    display: inline-block;
+    text-align: center;    
+}
+
+.bottom{
+    border-top: 1px solid #fff;
+    display: block;
+}
 
 /* ----------------- QUIZZES -----------------*/
 
