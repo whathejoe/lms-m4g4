@@ -27,6 +27,8 @@ session_start();
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <audio autoplay="true" loop="true"><source src="../sounds/bg_main.mp3" type="audio/mpeg" /></audio>
+
         <div class="container" id="mainMenu_container">
             <div class="row">
                 <h1 id="greeting">HELLO, <span id="user"></span>!</h1>
