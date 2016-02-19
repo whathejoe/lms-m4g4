@@ -508,6 +508,7 @@ div.card.mini > p.mini-card-header.underline {
 }
 
 .fraction {
+    vertical-align: middle;
     display: inline-block;
     text-align: center;    
 }
