@@ -29,7 +29,7 @@ session_start();
 
         <div class="container" id="mainMenu_container">
             <div class="row">
-                <h1 id="greeting">hello, <span id="user"></span>!</h1>
+                <h1 id="greeting">Hello, <span id="user"></span>!</h1>
             </div>
             <div class="row" id="buttonMenu">
                 <div class="col s3 center-align">
