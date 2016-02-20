@@ -64,13 +64,9 @@ session_start();
                     <a target="_blank" href="http://www.hoodamath.com/mobile/games/flappyfactors.html" class="btn-large hoverable waves-effect modal-trigger">Games</a>
                 </div>
                 <div class="col s4 btn-container">
-                    <a href="#" class="btn-large hoverable waves-effect modal-trigger">Settings</a>
+                    <a href="../index.php" class="btn-large hoverable waves-effect waves-light orange darken-2 modal-trigger">Sign out</a>
                 </div>
                 
-            </div>
-
-            <div class="row right-align">
-                <a href="../index.php" class="waves-effect waves-light btn-large orange darken-2 right-align" id="exit-btn">Sign out</a>
             </div>
 
             <div id="about_modal" class="modal">
