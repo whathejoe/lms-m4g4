@@ -16,6 +16,7 @@ app.directive('quiz', function(quizFactory) {
 				scope.quizOver = false;
 				scope.inProgress = true;
 				scope.chime = document.getElementById('correct');
+				scope.buzz = document.getElementById('wrong');
 				scope.getQuestion();
 			};
 
@@ -54,6 +55,7 @@ app.directive('quiz', function(quizFactory) {
 					scope.score++;
 					scope.correctAns = true;
 				} else {
+					scope.buzz.play();
 					scope.correctAns = false;
 				}
 
