@@ -342,7 +342,7 @@ $(function() {
 	$(window).on('beforeunload', function() {
 		var ongoing = $('div.over').hasClass('ng-hide');
 		if (ongoing) {
-		  	return 'Your quiz has not yet been finished. Grades will not be recorded unless you finish the quiz.';
+		  	return 'The quiz is not yet finished. Your grade will not be recorded unless you finish the quiz.';
 		}
 	});
 });
