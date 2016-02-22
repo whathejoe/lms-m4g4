@@ -351,6 +351,12 @@ table#scores td {
     margin-bottom: 30px;
 }
 
+.lesson .video-link {
+    display: block;
+    font-size: 1.6em;
+    text-decoration: underline;
+}
+
 .lesson .card-content > .card-section {
     display: block;
     margin-top: 20px;
@@ -542,6 +548,30 @@ div.card.mini > p.mini-card-header.underline {
 .bottom{
     border-top: 1px solid #fff;
     display: block;
+}
+
+/* ----------------- VIDEOS -----------------*/
+
+.video-body {
+    background: url(../img/bg_paper_repeat.jpg) left top;
+}
+
+.video-wrapper {
+    position: relative;
+}
+
+.video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.video-content p {
+    text-align: center;
+    font-style: italic;
 }
 
 /* ----------------- QUIZZES -----------------*/
