@@ -12,6 +12,7 @@ app.directive('quiz', function(quizFactory) {
 			scope.start = function() {
 				scope.id = 0;
 				scope.items = 0;
+				scope.maxItems = 15;
 				scope.quizOver = false;
 				scope.inProgress = true;
 				scope.chime = document.getElementById('correct');
@@ -25,7 +26,7 @@ app.directive('quiz', function(quizFactory) {
 
 			scope.getQuestion = function() {
 				var q = quizFactory.getQuestion(scope.id);
-				if(q) {
+				if(q && scope.items < scope.maxItems) {
 					scope.question = q.question;
 					scope.options = q.options;
 					scope.answer = q.answer;
