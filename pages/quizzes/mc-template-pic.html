@@ -4,6 +4,7 @@
 		<div class="quiz-area" ng-show="inProgress">
 			<div ng-show="!quizOver">
 		       	<span id="item-count" class="left">Question # {{ items }} / {{ maxItems }}</span>
+		       	<a href="index.html" class="left" id="leave">(Leave Quiz)</a>
 		        <span id="score" class="right">&#9733; Score: {{score}}</span>
 		        <img src="../../img/quizzes/{{ image }}" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" ng-show="image">
 				<h2 id="question">{{question}}</h2>

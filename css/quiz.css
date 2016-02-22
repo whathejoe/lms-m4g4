@@ -45,6 +45,7 @@ p.title {
 /* ----------------- QUIZ PROPER -----------------*/
 
 #item-count,
+#leave,
 #score,
 #question,
 #options,
@@ -57,10 +58,19 @@ p.title {
 	font-size: 28px;
 }
 
-#item-count,
-#score {
+#item-count {
 	color: #2bbbad;
 }
+
+#leave {
+	position: relative;
+	top: 4px;
+	left: 10px;
+	font-size: 24px;
+	color: #f44336;
+	vertical-align: text-bottom;
+}
+
 
 #score {
 	text-align: center;
@@ -71,6 +81,7 @@ p.title {
 .quiz-area img,
 #question {
 	clear: both;
+	padding-top: 16px;
 }
 #question {
 	font-size: 28px;
