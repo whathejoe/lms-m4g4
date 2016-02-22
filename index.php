@@ -26,23 +26,26 @@
         <audio autoplay="true" loop="true"><source src="sounds/bg_login.mp3" type="audio/mpeg" /></audio>
         <div class="container">
             <div class="row center-align">
-                <img src="img/splash_title.png" id="appLogo" class="center-align">    
+                <img src="img/splash.gif" id="appLogo" class="center-align">    
             </div>
 
-            <form name="login" method="post" action="login.php">
+            <form id="loginForm" name="login" method="post" action="login.php">
                 <div class="row">
-                    <div class="input-field col s4 push-s2">
-                        <input name="studname" id="name" type="text" class="validate" readonly required value="">
-                    </div>
-                    <div class="btn-container col s4 push-s2">
+                    <div class="btn-container col s4">
                         <a href="#select_user_modal" class="btn-large modal-trigger">Load existing user</a>
+                    </div>
+                    <div class="input-field col s4">
+                        <input name="studname" id="name" type="text" class="validate" readonly required placeholder="Select user">
+                    </div>
+                    <div class="input-field col s4">
+                        <input name="password" id="password" type="password" class="validate" required placeholder="Password">
                     </div>
                 </div>
                 <div class="row">
-                    <!-- <div class="btn-container col s4 push-s2">
+                    <div class="btn-container col s4">
                         <a href="#" class="btn-large">New User</a>
-                    </div> -->
-                    <div class="btn-container col s4 push-s4">
+                    </div>
+                    <div class="btn-container col s8">
                         <button type="submit" class="waves-effect waves-light btn-large purple accent-3" id="start">Start</button>
                     </div>
                 </div>
