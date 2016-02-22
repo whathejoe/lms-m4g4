@@ -174,3 +174,12 @@ function shuffleArray(array) {
     }
     return array;
 }
+
+$(function() {
+	$(window).on('beforeunload', function() {
+		var ongoing = $('div.over').hasClass('ng-hide');
+		if (ongoing) {
+		  	return 'Your quiz has not yet been finished. Grades will not be recorded unless you finish the quiz.';
+		}
+	});
+});
