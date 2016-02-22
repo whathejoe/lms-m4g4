@@ -144,6 +144,7 @@ textarea {
 /* ----------------- LOGIN -----------------*/
 
 #appLogo {
+    width: 650px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -158,26 +159,26 @@ form[name=login] div.input-field.col.s4.push-s2 {
 
 input#name,
 input#password {
-    border-bottom: 2px solid #D500F9;
+    border-bottom: 2px solid #673ab7;
     font-size: 42px;
-    color: #D500F9;
+    color: #4CAF50;
     text-align: center;
-    box-shadow: 0 1px 0 0 #EA80FC;
+    box-shadow: 0 1px 0 0 #b388ff;
 }
 
 
 #loginForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #26a69a;
+  color: #673ab7;
 }
 
 #loginForm input::-moz-placeholder { /* Firefox 19+ */
-  color: #26a69a;
+  color: #673ab7;
 }
 #loginForm input:-ms-input-placeholder { /* IE 10+ */
-  color: #26a69a;
+  color: #673ab7;
 }
 #loginForm input:-moz-placeholder { /* Firefox 18- */
-  color: #26a69a;
+  color: #673ab7;
 }
 
 #loginForm div.btn-container {

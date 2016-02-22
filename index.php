@@ -46,7 +46,7 @@
                         <a href="#" class="btn-large">New User</a>
                     </div>
                     <div class="btn-container col s8">
-                        <button type="submit" class="waves-effect waves-light btn-large purple accent-3" id="start">Start</button>
+                        <button type="submit" class="waves-effect waves-light btn-large amber darken-4" id="start">Start</button>
                     </div>
                 </div>
             </form>
