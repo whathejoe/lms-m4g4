@@ -195,6 +195,14 @@ input#password {
     background-color: #E040FB !important;
 }
 
+.toast.rounded.notif-success {
+    background-color: #43A047;
+}
+
+.toast.rounded.notif-fail {
+    background-color: #e53935;
+}
+
 footer {
     position: absolute;
     width: 100%;

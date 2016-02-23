@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -127,6 +130,28 @@
                 $('#name').val(user);
             });
         </script>
+        
+        <?php 
+        if (isset($_SESSION['notification']) && isset($_SESSION['notificationType'])) {
+            # code...
+            if ($_SESSION['notificationType'] == 'success') {
+                # code...
+                echo '<script type="text/javascript">'
+                    , 'var $toastContent = $("<span>' . $_SESSION['notification'] . '</span>");'
+                    , 'Materialize.toast($toastContent, 10000, "rounded notif-success");'
+                    , '</script>'
+                ;
+            } else if ($_SESSION['notificationType'] == 'fail') {
+                echo '<script type="text/javascript">'
+                    , 'var $toastContent = $("<span>' . $_SESSION['notification'] . '</span>");'
+                    , 'Materialize.toast($toastContent, 10000, "rounded notif-fail");'
+                    , '</script>'
+                ;
+
+            }
+
+        }
+        ?>
 
     </body>
 </html>

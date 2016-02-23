@@ -24,9 +24,11 @@ try {
         if ($result['password'] == $passphrase) {
             $_SESSION['id'] = $result['id'];
             $_SESSION['name'] = $name;
-            // $_SESSION['name'] = $result['password'];
+            $_SESSION['notification'] = null;
             header("Location: $url_success");
         } else {
+            $_SESSION['notification'] = 'The password you used was wrong.';
+            $_SESSION['notificationType'] = 'fail';
             header("Location: $url_fail");
         }
     } 
