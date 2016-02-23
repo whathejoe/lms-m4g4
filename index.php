@@ -46,7 +46,7 @@ session_start();
                 </div>
                 <div class="row">
                     <div class="btn-container col s4">
-                        <a href="#" class="btn-large">New User</a>
+                        <a href="#create_user_modal" class="btn-large modal-trigger">Create User</a>
                     </div>
                     <div class="btn-container col s8">
                         <button type="submit" class="waves-effect waves-light btn-large amber darken-4" id="start">Start</button>
@@ -95,6 +95,42 @@ session_start();
                 <a id="select_user_submit" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
             </div>
             </form>
+        </div>
+
+        <div id="create_user_modal" class="modal">
+            <div class="modal-content">
+                <h4>Create new user</h4>
+                
+                <form id="createUser" name="create_user" method="post" action="create_user.php">
+                    <div class="row">
+                        <div class="input-field col s6 push-s3">
+                            <input name="create_username" id="create_username" type="text" class="validate" maxlength="20" pattern=".{5,}" required>
+                            <label for="create_username">Username</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6 push-s3">
+                            <input name="create_password" id="create_password" type="password" class="validate" maxlength="20" required>
+                            <label for="create_password">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6 push-s3">
+                            <input name="create_password_repeat" id="create_password_repeat" type="password" class="validate" maxlength="20" required>
+                            <label for="create_password_repeat">Repeat password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s3 push-s3">
+                            <button type="submit" class="waves-effect waves-light btn amber darken-4" id="create">Create</button>
+                        </div>
+                        <div class="input-field col s3 push-s3">
+                            <a id="new_user_submit" class="modal-action modal-close waves-effect waves-green btn">Cancel</a>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
         </div>
 
         <script src="js/vendor/jquery-1.12.0.min.js"></script>

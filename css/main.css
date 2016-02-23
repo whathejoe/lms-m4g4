@@ -195,6 +195,10 @@ input#password {
     background-color: #E040FB !important;
 }
 
+#create_user_modal h4 {
+    text-align: center;
+}
+
 .toast.rounded.notif-success {
     background-color: #43A047;
 }
@@ -225,23 +229,6 @@ footer img {
 #user {
     font-size: 50px;
     font-weight: bold;
-}
-
-.input-field label {
-    color: #795548;
-}
-
-.input-field input[type=text] {
-    border-bottom-color: #795548;
-}
-
-.input-field input[type=text]:focus + label {
-    color: #ff6d00;
-}
-
-.input-field input[type=text]:focus {
-    border-bottom: 1px solid #ff6d00;
-    box-shadow: 0 1px 0 0 #ff6d00;
 }
 
 #exit-btn {
