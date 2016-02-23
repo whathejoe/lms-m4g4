@@ -15,10 +15,11 @@
 				</ul>
 				
 				<div ng-show="!answerMode">
+					<img class="quiz-eval" ng-show="correctAns" src="../../img/quizzes/answer_correct.png">
+					<img class="quiz-eval" ng-show="!correctAns" src="../../img/quizzes/answer_wrong.png">
 					<button ng-click="nextQuestion()" class="next-question btn">Next</button>
-					<span ng-show="correctAns">That is correct!</span>
-					<span ng-show="!correctAns">Sorry, that is an incorrect answer.</span>
 				</div>
+		        <button ng-click="checkAnswer()" ng-show="answerMode" class="btn" id="submit-answer">Submit</button>
 			</div>
 
 			<div class="over" ng-show="quizOver">
@@ -32,6 +33,5 @@
 			<p class="title">Quiz - {{ lesson }}</p>
 			<button id="startQuiz" ng-click="start()" class="btn-large waves-effect center-align">Start the Quiz</button>
 		</div>
-        <button ng-click="checkAnswer()" ng-show="answerMode" class="btn">Submit</button>
     </div>  
 </div>

@@ -78,7 +78,7 @@ p.title {
 	text-shadow: 0px 0px 3px black;
 }
 
-.quiz-area img,
+#score + img,
 #question {
 	clear: both;
 	padding-top: 16px;
@@ -103,8 +103,19 @@ p.title {
 	font-size: 20px;
 }
 
+.quiz-eval {
+	position: absolute;
+	right: 80px;
+	bottom: 60px;
+}
+
 .btn {
-	margin-left: 80px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-bottom: 30px;
+	margin-right: 80px;
+	min-width: 120px;
 }
 
 .btn.next-question ~ span {
