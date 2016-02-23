@@ -165,6 +165,34 @@ session_start();
                 // Check if empty or not
                 $('#name').val(user);
             });
+
+
+            // create user validation
+            window.onload = function () {
+                document.getElementById("create_username").onchange = validateUsername;
+                document.getElementById("create_password").onchange = validatePassword;
+                document.getElementById("create_password_repeat").onchange = validatePassword;
+            }
+
+            function validateUsername() {
+                var username = document.getElementById("create_username").value;
+                if (username.length < 5)
+                    document.getElementById("create_username").setCustomValidity("Minimum 5 characters.");
+                else
+                    document.getElementById("create_username").setCustomValidity('');  
+                //empty string means no validation error
+            }
+
+            function validatePassword(){
+                var pass2=document.getElementById("create_password").value;
+                var pass1=document.getElementById("create_password_repeat").value;
+                if(pass1!=pass2)
+                    document.getElementById("create_password_repeat").setCustomValidity("Passwords Don't Match");
+                else
+                    document.getElementById("create_password_repeat").setCustomValidity('');  
+                //empty string means no validation error
+                }
+
         </script>
         
         <?php 
