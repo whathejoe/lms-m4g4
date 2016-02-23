@@ -25,6 +25,7 @@ try {
             $_SESSION['id'] = $result['id'];
             $_SESSION['name'] = $name;
             $_SESSION['notification'] = null;
+            $_SESSION['notificationType'] = null;
             header("Location: $url_success");
         } else {
             $_SESSION['notification'] = 'The password you used was wrong.';
